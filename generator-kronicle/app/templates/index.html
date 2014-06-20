@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+        <!-- <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css"> 
+        <script src="js/vendor/modernizr-2.8.0.min.js"></script> -->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#kronNav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#/">Kronicle</a>
+                </div>
+                <div class="collapse navbar-collapse" id="kronNav">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#/edit">New Post</a></li>
+                    </ul>
+                    <p class="navbar-right navbar-text"><a href="#/signin" class="navbar-link">Sign In</a></span>
+            </div>                
+        </nav>
+        <div class="content">
+            <section class="row signin">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>
+                        Sign In
+                    </h2>
+                    <div class="input-group">
+                        <label>User Name</label>
+                        <input type="text" class="user form-control" />
+                    </div>
+                    <div class="input-group">
+                        <label>Password</label>
+                        <input type="password" class="pass form-control" />
+                    </div>
+                    <div class="input-group">
+                        <button class="btn btn-signin">
+                            Sign In
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <div class="error hasError">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="row editor">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>
+                        Create New Post | Edit Post
+                    </h2>
+                    <div class="input-group">
+                        <label>Title</label>
+                        <input type="text" class="title form-control" />
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Body</label>
+                        <textarea class="body form-control"></textarea>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Tags</label>
+                        <input type="text" class="tags form-control" />
+                    </div>
+                    <input type="hidden" class="author" />
+                    <input type="hidden" class="date" />
+                    <div class="input-group">
+                        <button class="btn btn-submit">
+                            Submit
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <div class="error hasError">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="row posts">
+                <div class="col-md-8 col-md-offset-2">
+                    <h2>
+                        Blog Title
+                    </h2>
+                </div>
+            </section>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+        <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="bower_components/lodash/dist/lodash.js"></script>
+        <script src="bower_components/pubsub-js/src/pubsub.js"></script>
+        <script src="bower_components/director/build/director.js"></script>
+        <script src="bower_components/kronicle/build/Kronicle.js"></script>
+        <script src="js/app/DataSources/ArrayDataSource.js"></script>
+        <script src="js/app/main.js"></script>
+        <!-- <script src="js/plugins.js"></script>
+         -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script> -->
+    </body>
+</html>
