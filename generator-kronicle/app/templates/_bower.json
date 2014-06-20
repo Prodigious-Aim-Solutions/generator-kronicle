@@ -1,0 +1,23 @@
+{
+  "name": "generator-kronicle",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Prodigious-Aim-Solutions/generator-kronicle",
+  "authors": [
+    "Corbzilla <jason.ron.corbett@gmail.com>"
+  ],
+  "description": "A yeoman generator for kronicle projects",
+  "main": "./build/Kronicle.js",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/Prodigious-Aim-Solutions/generator-kronicle.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "pubsub-js": "~1.4.2",
+    "lodash": "~2.4.1",
+    "director": "~1.2.2",
+    "kronicle": "https://github.com/Prodigious-Aim-Solutions/Kronicle.git",
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1.1"
+  }
+}
